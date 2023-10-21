@@ -1,0 +1,80 @@
+% This file was created by tikzplotlib v0.9.6.
+\begin{tikzpicture}
+
+\begin{axis}[
+legend cell align={left},
+legend style={fill opacity=0.8, draw opacity=1, text opacity=1, at={(0.5,0.91)}, anchor=north, draw=white!80!black},
+tick align=outside,
+tick pos=left,
+x grid style={white!69.0196078431373!black},
+xlabel={Delta},
+xmin=0.4775, xmax=0.9725,
+xtick style={color=black},
+y grid style={white!69.0196078431373!black},
+ylabel={Payoff gain},
+ymin=-0.0142978835073377, ymax=0.283959021538087,
+ytick style={color=black}
+]
+\addplot [semithick, blue, mark=*, mark size=3, mark options={solid}]
+table {%
+0.5 0.0522708630995892
+0.6 0.00783402253121945
+0.7 0.048156838800085
+0.8 0.115027444670204
+0.9 0.0521675812900755
+0.95 -0.000740751459818334
+};
+\addlegendentry{P1-ND-Bas}
+\addplot [semithick, blue, mark=x, mark size=3, mark options={solid}]
+table {%
+0.5 0.0989011156484616
+0.6 0.155058416399743
+0.7 0.104291731072057
+0.8 0.0500187198507698
+0.9 0.120735998547155
+0.95 0.160960999060749
+};
+\addlegendentry{P2-ND-Bas}
+\addplot [semithick, blue, dotted]
+table {%
+0.5 0.151171978748051
+0.6 0.162892438930963
+0.7 0.152448569872142
+0.8 0.165046164520974
+0.9 0.172903579837231
+0.95 0.16022024760093
+};
+\addlegendentry{Bas Agg}
+\addplot [semithick, black, mark=*, mark size=3, mark options={solid}]
+table {%
+0.5 0.0697484787258196
+0.6 0.113338550814987
+0.7 0.119416989283534
+0.8 0.104434794961771
+0.9 0.104983681189214
+0.95 0.0943254779796439
+};
+\addlegendentry{P1-ND-CA}
+\addplot [semithick, black, mark=x, mark size=3, mark options={solid}]
+table {%
+0.5 0.138858703762136
+0.6 0.110229977693975
+0.7 0.128505699032583
+0.8 0.130563274874381
+0.9 0.147652669899074
+0.95 0.176076411510924
+};
+\addlegendentry{P2-ND-CA}
+\addplot [semithick, black, dotted]
+table {%
+0.5 0.208607182487955
+0.6 0.223568528508962
+0.7 0.247922688316117
+0.8 0.234998069836151
+0.9 0.252636351088288
+0.95 0.270401889490568
+};
+\addlegendentry{CA Agg}
+\end{axis}
+
+\end{tikzpicture}
